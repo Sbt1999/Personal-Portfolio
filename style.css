@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 173, 232);
+}
+
+/* here I am designing Home.html page and sidebar.html */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(216, 216, 216);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-100%);
+    transition: transform 0.3s ease-in;
+}
+
+.sidebarGo {
+    transform: translate(0%) !important;
+    /* transition: 0.3s; */
+}
+
+.sidebar nav {
+    padding: 30px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 33px 0px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: rgb(245, 138, 255); */
+    height: 100vh;
+    width: 100vw;
+}
+
+.humburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin-left: 5px;
+}
+
+.cross {
+    margin-left: 250px;
+}
+
+.infocontainer {
+    /* background-color:rgb(120, 154, 254); */
+    width: 80vw;
+    height: 68vh;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Hello {
+    font-size: 4.5rem;
+    font-weight: 10;
+    margin-left: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+    font-size: 4rem;
+    margin-left: 50px;
+    font-weight: 50;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 3rem;
+    font-weight: 10;
+    margin-left: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.moreabout {
+    margin-left: 1rem;
+    font-size: 17px;
+    margin-left: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.button {
+    margin-left: 49px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: #fff;
+    border: none;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 20px 3px;
+}
+
+.btn:hover {
+    color: dodgerblue;
+    background-color: #fff;
+    border: none;
+}
+
+.devPic img {
+    height: 58vh;
+}
+
+/* here I am designing Contact.html page */
+
+.contactform {
+    font-family: 'Radio Canada', sans-serif;
+    padding: 90px 34px;
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
+.contactform h1 {
+    font-family: 'Radio Canada', sans-serif;
+    padding: 15px 0;
+}
+
+.mb-3 {
+    padding: 11px 0;
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+.contactform form div input {
+    width: 21vw;
+    border-radius: 4px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 0.6rem;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 1px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#isclient {
+    width: 13px;
+    margin-top: 1.5px;
+    margin-left: 5px;
+    color: midnightblue;
+}
+
+.form-check-label {
+    padding-left: 5px;
+    font-size: 0.7rem;
+}
+
+.btn1-sm {
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 22px;
+    color: #fff;
+    border: none;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 10px 3px;
+}
+
+.btn1-sm:hover {
+    color: dodgerblue;
+    background-color: #fff;
+    border: none;
+}
+
+/* here I am designing blog.html page */
+
+
+.blogContainer h1 {
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.blogitem {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 22px;
+}
+
+.blogitem h2 {
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: 599;
+}
+
+/* here I am designing portfolio.html page */
+
+.infoContainerMe {
+    margin: 22px;
+    padding: 35px 34px;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.aboutMe p {
+    padding-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.aboutMe h2 {
+    padding: 15px 0;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.skillContainer {
+    padding: 12px;
+    margin-left: 90px;
+}
+
+.skill1 {
+    margin: 12px 12px;
+    height: 6px;
+    width: 265px;
+    background-color: palegreen;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.skill2 {
+    margin: 12px 12px;
+    height: 6px;
+    width: 240px;
+    background-color: palegreen;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.skill3 {
+    margin: 12px 12px;
+    height: 6px;
+    width: 220px;
+    background-color: palegreen;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.skill4 {
+    margin: 12px 12px;
+    height: 6px;
+    width: 200px;
+    background-color: palegreen;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.skill5 {
+    margin: 12px 12px;
+    height: 6px;
+    width: 180px;
+    background-color: palegreen;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.MyProjects {
+    font-family: 'Radio Canada', sans-serif;
+}
+
+/* here I am designing services.html page */
+
+.template h1 {
+    /* position: absolute; */
+    margin-top: 25px;
+    font-family: 'Radio Canada', sans-serif;
+    margin-left: 30vw;
+    padding-top: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.box1 {
+    display: flex;
+    /* justify-content: space-between; */
+    display: inline-block;
+    justify-content: center;
+    height: 451px;
+    width: 335px;
+    margin: 27px;
+    border-radius: 6px;
+    margin-top: 75px;
+    padding: 10px 25px;
+    background-color: rgb(219, 218, 218);
+}
+
+.box1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box1 a {
+    float: right;
+    margin-top: 35px;
+}
+
+.box1 h4 {
+    font-family: 'Radio Canada', sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.box1 p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.box2 a {
+    float: right;
+    margin-top: 35px;
+}
+
+.box2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2 h4 {
+    font-family: 'Radio Canada', sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.box2 p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.box2 {
+    display: flex;
+    /* justify-content: space-between; */
+    display: inline-block;
+    justify-content: center;
+    height: 451px;
+    width: 335px;
+    margin: 27px;
+    border-radius: 6px;
+    margin-top: 75px;
+    padding: 10px 25px;
+    background-color: rgb(219, 218, 218);
+}
+
+/* here I am designing the media query of Home.html page and sidebar.html */
+@media(max-width: 945px) {
+
+    .sidebar{
+       width:200px;
+    }
+    .cross {
+        margin-left: 150px;
+    }
+    
+    /* Home.html */
+    .devPic {
+        display: none;
+    }
+
+    .devInfo {
+        margin-top: 10px;
+        margin-left: -45px;
+    }
+
+    .Hello {
+        font-size: 3.5rem;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        font-weight: 600;
+        justify-content: center;
+    }
+
+    .about {
+        font-size: 2.3rem;
+        justify-content: center;
+    }
+/* Services.html */
+    .template h1 {
+        display: flex;
+        font-size: 1.7rem;
+        margin:0 40px;
+        margin-top: 40px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .box1 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box1 {
+        display: flex;
+        /* justify-content: space-between; */
+        display: inline-block;
+        justify-content: center;
+        height: 451px;
+        width: 16rem;
+        margin: 27px auto;
+        border-radius: 6px;
+        padding: 10px 25px;
+        background-color: rgb(219, 218, 218);
+    }
+
+    .box2 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box2 {
+        display: flex;
+        /* justify-content: space-between; */
+        display: inline-block;
+        justify-content: center;
+        height: 451px;
+        width: 16rem;
+        margin: 27px auto;
+        border-radius: 6px;
+        padding: 10px 25px;
+        background-color: rgb(219, 218, 218);
+    }
+    /* About.html */
+    .infoContainerMe {
+        margin: 22px 0px;
+    }
+    .skillContainer {
+        margin-left: 10px;
+    }
+    .aboutMe p {
+        text-align: justify;
+    }
+
+/* Blog.html */
+    .blogContainer h1{
+        margin-left: 25px;
+        font-size: 1.6rem;
+        margin-bottom: 22px;
+    }
+    .blogitem {
+        margin:0 25px;
+        text-align: justify;
+        margin-bottom: 22px;
+    }
+
+/* Contact.html */
+
+    .contactform {
+        margin: 0px;
+    }
+    .contactform h1 {
+        font-size: 1.7rem;
+        font-family: 'Radio Canada', sans-serif;
+    }
+    .mb-3 {
+        padding: 11px 0;
+        display: flex;
+        flex-direction: column;
+        width: 72vw;
+        border-radius: 4px;
+        margin: 6px 0;
+        padding: 3px;
+    }
+    .contactform form div input {
+        width: 71vw;
+        border-radius: 4px;
+        margin: 6px 0;
+        padding: 3px;
+    }
+
+}
